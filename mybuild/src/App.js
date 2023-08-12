@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter/Counter';
+import CounterWithRedux from './components/Counter/CounterWithRedux';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='conteiner'>
+      <header></header>
+      <nav>
+        <div>
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <div>
+          <div><p></p></div>
+          <Counter/>
+          <CounterWithRedux/>
+          <section></section>
+        </div>
+      </main>
+      <footer>
+        <div className='footer-head'></div>
+        <div className='footer-bottom'></div>
+      </footer>
     </div>
   );
 }
